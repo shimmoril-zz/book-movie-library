@@ -16,8 +16,19 @@ module.exports = {
         exclude: /node_modules/,
         use: [
           'babel-loader',
+          "eslint-loader",
         ],
       },
+      {
+          test: /\.scss$/,
+          use: [{
+              loader: "style-loader", //creates style nodes from js strings
+          }, {
+              loader: "css-loader", //translates css into commonjs
+          }, {
+              loader: "sass-loader" //compiles sass to css
+          }]
+      }
     ],
   },
   resolve: {
