@@ -1,4 +1,4 @@
-Ashleigh's Basic React Starter App
+Book and Movie Library
 -------------------------------------------------------------------------------
 Welcome!
 
